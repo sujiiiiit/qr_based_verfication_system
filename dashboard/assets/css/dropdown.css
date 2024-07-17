@@ -1,0 +1,39 @@
+.select-wrapper {
+  background-color: var(--bg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  max-height: 50vh;
+  overflow: hidden;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  max-width: 25rem;
+  z-index: -3;
+  box-shadow: 0 8px 17px 2px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%),
+    0 5px 5px -3px rgb(0 0 0 / 20%);
+}
+
+ .select-wrapper {
+  transform: scale(0);
+}
+.activedrp {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  z-index: 3;
+}
+
+.select-wrapper .scrollable {
+  position: relative;
+  overflow-y: auto;
+}
+
+.select-wrapper .scrollable li {
+  list-style: none;
+  color: #fff;
+  padding: 12px;
+}
+
+

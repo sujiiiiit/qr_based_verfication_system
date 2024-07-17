@@ -1,0 +1,88 @@
+.preloadergrid {
+  display: grid;
+  grid-gap: .3rem;
+  grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.preloader .items {
+  background-color: #181818;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #2f2f2f;
+}
+
+.preloader .rect{
+  height: 120px;
+  border-radius: 10px;
+}
+.preloader .srect{
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.preloader .circle{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.preloader .txt{
+  width: 40%;
+  height: 15px;
+  border-radius: 10px;
+}
+.preloader .desc{
+  width: 100%;
+}
+.preloader .txt2{
+
+  width: 80%;
+  height: 15px;
+  border-radius: 10px;
+}
+
+.preloader .prestyle2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+
+.preloader .items::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #181818 0%,
+    #212121 20%,
+    #181818 40%,
+    #181818 100%
+    
+  );
+  background-repeat: no-repeat;
+  background-size: 450px 400px;
+  animation: shimmer 1s linear infinite;
+  background-size: 650px 600px;
+
+}
+
+.preloader .pre2::before ,
+.preloader .pre4::before ,
+.preloader .pre6::before ,
+.preloader .pre8::before ,
+.preloader .pre10::before {
+    animation-delay: 0.2s;
+}
+
+@keyframes shimmer {
+    0% {
+      background-position: -450px 0;
+    }
+    100% {
+      background-position: 450px 0;
+    }
+  }

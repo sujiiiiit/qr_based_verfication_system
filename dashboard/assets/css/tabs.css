@@ -1,0 +1,75 @@
+.left_subconatiner_tab {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  margin-top: 4px;
+}
+.left_subconatiner_tab .tabs_header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2px;
+}
+
+.left_subconatiner_tab .tabs_header nav {
+  width: 100%;
+  height:100%;
+  display: flex;
+  position: relative;
+}
+.left_subconatiner_tab .tabs_header nav .tab {
+  width: 50%;
+  height:100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--bg);
+}
+.left_subconatiner_tab .tabs_header nav .indicator {
+  width: 33.33%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  top: 40px;
+  background: var(--primary);
+z-index: 1;
+  transition: 0.3s ease;
+}
+.left_subconatiner_tab .tabs_header .block {
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+}
+
+.tab_main .tab_content1,
+.tab_main .tab_content2,
+.tab_main .tab_content3 {
+  display: none;
+  width: 100%;
+  height: 76vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.tab_main .tab_content1.active,
+.tab_main .tab_content2.active,
+.tab_main .tab_content3.active {
+  display: block;
+}
+
+.tab_reel1.active ~ .indicator {
+  left: 0;
+}
+
+.tab_reel2.active ~ .indicator {
+  left: 33.33%;
+}
+.tab_reel3.active ~ .indicator {
+  left: 66.66%;
+}
+

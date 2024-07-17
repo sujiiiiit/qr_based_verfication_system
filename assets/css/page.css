@@ -1,0 +1,197 @@
+
+body {
+  background-color: var(--bg);
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+.auth-placeholder {
+  flex: 1;
+  min-height: 3rem;
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+}
+.tabs-container {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  width: 100%;
+}
+.tabs-container:before {
+  background-color: transparent;
+  bottom: 0;
+  content: " ";
+  left: -100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.tabs-container .tabs-tab {
+  background-color: var(--bg);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+}
+.tabs-container .tabs-tab.active {
+  display: flex;
+}
+.tabs-container .tabs-tab .container {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 810px;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  align-items: center;
+}
+.auth-image {
+  border-radius: 50%;
+  background-color: var(--primary);
+  flex: 0 auto;
+  display: flex;
+  height: 10rem;
+  margin-bottom: 1.5rem;
+  width: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+.auth-image svg {
+  fill: var(--bg);
+  width: 80px;
+  height: 80px;
+}
+.auth-image svg path {
+  stroke: var(--bg);
+  stroke-width: 4;
+}
+
+.headtxt {
+  font-size: 32px;
+  line-height: 110%;
+  margin: 22px 0 14px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+.wrongemaildiv {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.wrongemail {
+  font-size: 25px;
+  line-height: 110%;
+  margin: 22px 0 14px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wrongemaildiv svg {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: #aaa;
+  stroke-width: 2;
+  margin-left: 10px;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+.wrongemaildiv svg:hover {
+  stroke: #fff;
+  transition: 0.2s ease-in;
+}
+.input-wrapper {
+  margin-top: 49px;
+}
+.subtitle {
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  color: #aaa;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  color: #8774e1;
+}
+
+.center {
+  text-align: center !important;
+}
+.more-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 2rem;
+}
+.break::before {
+  content: " ";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: #aaa;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .headtxt,
+  .wrongemail {
+    font-size: 20px;
+    margin: 2px 0 8px;
+  }
+  .subtitle {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+  .auth-image {
+    height: 7.5rem;
+    margin-bottom: 1.5rem;
+    width: 7.5rem;
+  }
+  .auth-image svg {
+    width: 60px;
+    height: 60px;
+  }
+  .auth-image svg path {
+    stroke-width: 2;
+  }
+
+  .input-wrapper {
+    margin-top: 10px;
+    padding: 0 16px;
+  }
+  .field2 {
+    padding: 0 16px;
+  }
+  .wrongemaildiv svg {
+    width: 27px;
+    height: 27px;
+    top: 0;
+  }
+  .more-links .link {
+    font-size: 14px;
+  }
+}

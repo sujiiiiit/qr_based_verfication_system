@@ -1,0 +1,12 @@
+.tippy-content {
+  font-size: 12px;
+  padding: 5px 10px;
+  box-sizing: content-box;
+  font-family: sans-serif;
+  color: #eeeeee;
+}
+
+.tippy-box {
+  border-radius: 4px;
+  background-color: #000;
+}

@@ -1,0 +1,92 @@
+:root {
+  --inputtextpadding: 1.1rem;
+  --bg: #212121;
+  --primary: #8774e1;
+  --ligth-primary-color:rgba(135, 116, 225, 0.08);
+}
+
+ * {
+  box-sizing: border-box;
+}
+
+.searchlabel {
+  position: relative;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchlabel {
+  background: #181818;
+  padding: 1.1rem 0.4rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 25rem;
+  height: 45px;
+  outline: none;
+  border: 1px solid #2f2f2f;
+}
+.searchlabel input {
+  width: 100%;
+  background-color: transparent;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.searchlabel:hover {
+  border-color: #707579;
+}
+
+.searchlabel input[placeholder] {
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 45px;
+}
+
+
+.searchlabel:focus-within, 
+#search-label.is-focused {
+  border: 2px solid var(--primary);
+  background-color: var(--bg);
+}
+
+.btn-icon {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50% !important;
+  color: #aaaaaa;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  padding: 0.5rem;
+  position: relative;
+  text-align: center;
+  transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
+  cursor: pointer;
+}
+.searchlabel .btn-icon{
+  font-size: 1rem;
+}
+.btn-icon:hover{
+    color: #fff;
+    opacity: 1;
+    background-color: rgba(113, 118, 122, 0.3)
+}
+.btn-icon.disabled:hover{
+   cursor: context-menu !important;
+   background-color: transparent;
+   color: #aaaaaa;
+}
+
+
+.searchlabel input:focus~.tgico-close{
+display: flex;
+} 
+

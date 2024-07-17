@@ -1,0 +1,32 @@
+.drop-zone {
+  display: none;
+  background: rgba(102, 74, 0, 0.8);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding-top: 45vh;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 6000;
+}
+body{
+  background-color: var(--bg2) !important;
+}
+.file-dropzone h1 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.file-dropzone * {
+  pointer-events: none;
+}
+#fileToUpload {
+  display: none;
+}
+
+#fileToUpload {
+  display: none;
+}
+
